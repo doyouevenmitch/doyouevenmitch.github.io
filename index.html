@@ -1,0 +1,54 @@
+<!DOCTYPE
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link href='http://fonts.googleapis.com/css?family=Unlock' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" type="text/css" href="Normalise.css" />
+    <link rel="stylesheet" type="text/css" href="Calculator.css" />
+</head>
+<body onload="calculator.start();">
+	<h1>Calculatron</h1>
+	<div id="calcFrame">
+		<div id="calculator">
+				<input id="screen" type="text" readonly="readonly" value="0" />
+				<div class="fourRow">
+					<button class="memory">mc</button>
+					<button class="memory">m+</button>
+					<button class="memory">m-</button>
+					<button class="memory">mr</button>
+				</div>
+				<div class="fourRow">
+					<button class="clear">ac</button>
+					<button class="invert">+/-</button>
+					<button class="operator">÷</button>
+					<button class="operator">x</button>
+				</div>
+				<div class="fourRow">
+					<button class="number">7</button>
+					<button class="number">8</button>
+					<button class="number">9</button>
+					<button class="operator">-</button>
+				</div>
+				<div class="fourRow">
+					<button class="number">4</button>
+					<button class="number">5</button>
+					<button class="number">6</button>
+					<button class="operator">+</button>
+				</div>
+					<button id="dblHeight" class="operator">=</button>
+				<div class="threeRow">
+					<button class="number">1</button>
+					<button class="number">2</button>
+					<button class="number">3</button>
+				</div>
+				<div class="threeRow">
+					<button id="dblWidth" class="number">0</button>
+					<button class="number">.</button>
+				</div>
+		</div>	
+	</div>
+</body>
+<script src="Calculator.js"></script>
+</html>

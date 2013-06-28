@@ -1,0 +1,137 @@
+html {
+    font-size:10px;
+}
+
+body {
+	max-width:768px;
+	margin:0 auto;
+    background-color: #535661;
+    font-size:2rem;
+}
+
+h1 {
+    font-family: 'arial black', sans-serif;
+    font-size:5rem;
+    color:black;
+    margin-bottom:1rem;
+    text-align:center;
+    height:6rem;
+    transition-property: color;
+    transition-duration: 1s;
+    -webkit-transition-property: color; /* Safari */
+    -webkit-transition-duration: 1s; /* Safari */
+}
+
+h1:hover {
+    color:#0600b5;
+}
+
+button {
+    height:5rem;
+    width:8rem;
+    margin-right:1rem;
+    border-radius:0.5rem;
+    border:none;
+}
+
+button {
+    -moz-box-shadow: 0px 0px 0.5rem 1px #00bbff;
+    -webkit-box-shadow: 0px 0px 0.5rem 1px #00bbff;
+    box-shadow: 0px 0px 0.5rem 0.1rem #00bbff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #23252e), color-stop(1, #000000) );
+    background:-moz-linear-gradient( center top, #23252e 5%, #000000 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#23252e', endColorstr='#000000');
+    background-color:#23252e;
+    -moz-border-radius:0.6rem;
+    -webkit-border-radius:0.6rem;
+    border-radius:0.6rem;
+    border:0.1rem solid #333333;
+    display:inline-block;
+    color:#00bbff;
+    font-family:arial;
+    font-size:2.5rem;
+    font-weight:bold;
+    text-decoration:none;
+}
+button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #23252e) );
+    background:-moz-linear-gradient( center top, #000000 5%, #23252e 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#23252e');
+    background-color:#000000;
+}
+button:active {
+    position:relative;
+    top:0.1rem;
+}
+
+input {
+    height:6rem;
+    margin:0;
+    margin-bottom:2rem;
+    width:37rem;
+    border:0.3rem inset #1a1b21;
+    border-radius:0.6rem;
+    background-color:#303238;
+    color:#00bbff;
+    font-size:4rem;
+    text-align:right;
+}
+
+#calcFrame{
+    background-color: #17181a;
+    width: 40rem;
+    height: 50rem;
+    padding:3rem 2rem;
+    margin:0 auto;
+    border-radius:1.5rem;
+    border:0.5rem outset #1a1b21;
+}
+
+#calculator {
+    margin:0 auto;
+    width:36.8rem;
+    height:48rem;
+}
+
+.fourRow {
+    width:43rem;
+    height:5rem;
+    margin-bottom:2rem;
+}
+
+.threeRow {
+    width:28.5rem;
+    height:5rem;
+    margin-bottom:2rem;
+    float:left;
+}
+
+#dblHeight {
+    height:12rem;
+    margin-right:0;
+    float:right;
+}
+
+#dblWidth {
+    width:17.5rem;
+}
+
+@media screen and (max-width:800px; orientation:portrait;) {
+    html {font-size:12;}
+}
+
+@media screen and (max-width:500px) {
+    html {font-size:6.5px;}
+}
+
+@media screen and (orientation:landscape) {
+    #calcFrame {margin-top:-10rem;}
+    h1 {visibility:hidden;}
+}
+/*    Couldn't get this one working for some reaason.
+@media screen and (max-height:500px; orientation:landscape;) {
+    html {font-size:6.5px;}
+    #calcFrame {margin-top:-10rem;}
+    h1 {visibility:hidden;}
+}
+*/
